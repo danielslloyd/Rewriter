@@ -159,7 +159,7 @@ def rewrite_text():
 
 
 if __name__ == '__main__':
-    port = 5000
+    port = 5473
     print(f"\n{'='*60}")
     print(f"  Text Rewriter Application")
     print(f"{'='*60}")
