@@ -69,7 +69,7 @@ def main():
     def open_browser():
         time.sleep(1.5)
         print("Opening browser...")
-        webbrowser.open("http://localhost:5000")
+        webbrowser.open("http://localhost:5473")
 
     import threading
     browser_thread = threading.Thread(target=open_browser, daemon=True)
@@ -78,7 +78,7 @@ def main():
     # Import and run the Flask app
     try:
         from app import app
-        app.run(host='0.0.0.0', port=5000, debug=False)
+        app.run(host='0.0.0.0', port=5473, debug=False)
     except KeyboardInterrupt:
         print("\n\nShutting down server...")
         print("Goodbye!\n")
